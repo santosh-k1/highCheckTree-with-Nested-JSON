@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery highchecktree Plugin Demo</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../js/highchecktree.js"></script>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="../css/highCheckTree.css"/>
+        <style type="text/css">
+        body { font-family:'Open Sans'; font-size:14px;}
+            #main-container{
+                width: 600px;
+                margin:  150px auto;uyiyiyiy
+            }
+            
+            #tree-container label.hover{
+                color: red;
+            }
+        </style>
+        
+    </head>
+    <body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+</div>
+</div>
+       <div id="main-container">
+       <h1>jQuery highchecktree Plugin Demo</h1>
+        <div id="tree-container"></div>
+       </div>
+        <script>
+           // var mockData = [];
+            var mockData= [{
+    item:{id:'id', label:'label', checked:false},
+    children:[
+        {item:{id:'id1', label:'label1', checked:false}},
+        {item:{id:'id2', label:'label2', checked:false}},
+        {item:{id:'id3', label:'label3', checked:false}}
+]
+    
+},
+{
+    item:{id:'id22', label:'label', checked:false},
+    children:[
+        {item:{id:'id221', label:'label221', checked:false},
+        children:[
+        {item:{id:'id2212', label:'label2212', checked:false}},
+        {item:{id:'id2223', label:'label2223', checked:false}},
+        {item:{id:'id2234', label:'label2234', checked:false}}
+]
+    },
+        {item:{id:'id222', label:'label222', checked:false}},
+        {item:{id:'id223', label:'label223', checked:false}}
+]
+    
+}]
+
+            
+            $('#tree-container').highCheckTree({
+                data: mockData
+            });
+        </script> 
+ </body>
+</html>
